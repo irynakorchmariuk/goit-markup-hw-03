@@ -1,0 +1,206 @@
+:root {
+  --font-color: #4d5ae5;
+  --color-menu: #2e2f42;
+  --color-nav-links: #434455;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-nav-links);
+  background-color: #ffffff;
+}
+/*=============================HEADER FIRST AND SEKOND PAGE============================*/
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--font-color);
+}
+.header-part-word {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--color-menu);
+}
+
+.menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--color-menu);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: #404bbf;
+}
+.communication-methods {
+  font-style: normal;
+}
+.contacts {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-nav-links);
+}
+.contacts:hover,
+.contacts:focus {
+  color: #404bbf;
+}
+.contacts {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-nav-links);
+}
+.contacts:hover,
+.contacts:focus {
+  color: #404bbf;
+}
+/*=========================SECTION HERO FIRST PAGE====================== */
+.hero {
+  background: var(--color-menu);
+}
+.section-name {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+.modal-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  color: #ffffff;
+  background: var(--font-color);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background: #404bbf;
+}
+.section-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: var(--color-menu);
+}
+.text-section-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/*COMPONENS FOR TWO SECTOIN TITLE: What are we doing and Our team*/
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: var(--color-menu);
+}
+/*COMPONENS FIRST SECTION for h for section Our team*/
+.web-studioworker {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--color-menu);
+}
+/*COMPONENS FIRST SECTION for p heading */
+.web-studioworker-speciality {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+/*==========================FOURTH SECTION====================== */
+.section-list-team {
+  background-color: #f4f4fd;
+}
+.links-fourth-section {
+  background-color: #ffffff;
+}
+/*=====================SECTION HERO SECOND PAGE=========================*/
+/*BUTTONS All-WebSite-App-Design-Marketing*/
+.filter-btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  color: var(--font-color);
+  background: #f4f4fd;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: #ffffff;
+  background: #404bbf;
+}
+/*================Subheadings of the second section====================*/
+.nav-types-work {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: var(--color-menu);
+}
+/*PARAGRAPHS SUPHEADINGS*/
+.text-supnav {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-nav-links);
+}
+/*FOOTER*/
+.footer {
+  background-color: var(--color-menu);
+}
+.footer-part-word {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #f4f4fd;
+}
+.paragraph-footer {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #e7e9fc;
+}
