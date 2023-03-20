@@ -2,7 +2,10 @@
   --font-color: #4d5ae5;
   --color-menu: #2e2f42;
   --color-nav-links: #434455;
+  --color-white: #ffffff;
+  --color-blue: #404bbf;
 }
+
 .list {
   list-style: none;
 }
@@ -12,11 +15,14 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--color-nav-links);
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+.section-second {
+  padding-top: 120px;
 }
 /*===================Reset styles HM3================== */
 h1,
@@ -74,6 +80,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--font-color);
+}
+.logo-header {
   margin-right: 76px;
 }
 .header-part-word {
@@ -97,7 +105,10 @@ img {
 }
 .menu-link:hover,
 .menu-link:focus {
-  color: #404bbf;
+  color: var(--color-blue);
+}
+.mail-number:not(:last-child) {
+  margin-right: 40px;
 }
 .communication-methods {
   font-style: normal;
@@ -109,16 +120,15 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-nav-links);
-  margin-right: 40px;
 }
 .contacts:hover,
 .contacts:focus {
-  color: #404bbf;
+  color: var(--color-blue);
 }
 
 /*=========================SECTION HERO FIRST PAGE====================== */
 .hero {
-  background: var(--color-menu);
+  background-color: var(--color-menu);
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -129,7 +139,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
 
-  color: #ffffff;
+  color: var(--color-white);
   margin-bottom: 48px;
 }
 .modal-btn {
@@ -141,9 +151,11 @@ img {
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
 
-  color: #ffffff;
-  background: var(--font-color);
+  color: var(--color-white);
+  background-color: var(--font-color);
+  border-color: transparent;
 
   border-radius: 4px;
   padding-top: 15px;
@@ -153,12 +165,9 @@ img {
 }
 .modal-btn:hover,
 .modal-btn:focus {
-  background: #404bbf;
+  background-color: var(--color-blue);
 }
-.btn-hero {
-  display: flex;
-  justify-content: center;
-}
+
 .section-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -166,8 +175,6 @@ img {
   letter-spacing: 0.02em;
 
   color: var(--color-menu);
-
-  padding-bottom: 8px;
 }
 .text-section-subtitle {
   font-size: 16px;
@@ -178,8 +185,24 @@ img {
 .list-of-benefits {
   display: flex;
 }
-.text-benefit:not(:nth-child(4n)) {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.text-benefit:not(:last-child) {
   margin-right: 24px;
+}
+.section-subtitle {
+  margin-bottom: 8px;
 }
 
 /*Third section What are we doing*/
@@ -235,12 +258,13 @@ img {
   margin-right: 24px;
 }
 .links-fourth-section {
-  background-color: #ffffff;
+  background-color: var(--color-white);
+  border-radius: 0px 0px 4px 4px;
 }
+
 .name-vacancy-employee {
   padding-top: 32px;
-  border-radius: 0px 0px 4px 4px;
-  border: solid 0.5px #ccc;
+  padding-bottom: 32px;
 }
 
 /*=====================SECTION HERO SECOND PAGE=========================*/
@@ -253,19 +277,19 @@ img {
   letter-spacing: 0.04em;
 
   color: var(--font-color);
-  background: #f4f4fd;
+  background-color: #f4f4fd;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   cursor: pointer;
 }
 .filter-btn:hover,
 .filter-btn:focus {
-  color: #ffffff;
-  background: #404bbf;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  border-color: transparent;
 }
 .menu-sections {
   display: flex;
-  margin-top: 96px;
   margin-bottom: 72px;
   justify-content: center;
 }
@@ -273,7 +297,10 @@ img {
   margin-right: 24px;
 }
 .btn-portfolio {
-  padding: 12px, 24px, 12px, 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 /*================Subheadings of the second section====================*/
 .nav-types-work {
@@ -284,6 +311,10 @@ img {
 
   color: var(--color-menu);
 }
+.section-subtitle {
+  margin-bottom: 8px;
+}
+
 /*PARAGRAPHS SUPHEADINGS*/
 .text-supnav {
   font-size: 16px;
@@ -305,15 +336,14 @@ img {
 /*.pictures-of-works {
   flex-basis: calc((100%-48px) / 3);
 }*/
-.bottom-pictures {
-  margin-bottom: 120px;
-}
+
 .typical-examples-work {
-  border: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
   padding-top: 32px;
 }
-.nav-types-work {
-}
+
 /*FOOTER*/
 .footer {
   background-color: var(--color-menu);
