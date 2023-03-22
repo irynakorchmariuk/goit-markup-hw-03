@@ -339,7 +339,8 @@ img {
 .portfolio-img {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px 48px;
+  row-gap: 24px;
+  column-gap: 48px;
 }
 .typical-examples-work {
   border-left: 1px solid #e7e9fc;
