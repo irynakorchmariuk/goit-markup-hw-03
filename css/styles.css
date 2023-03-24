@@ -201,6 +201,9 @@ img {
 .text-benefit:not(:last-child) {
   margin-right: 24px;
 }
+.text-benefit {
+  flex-basis: 264.5px;
+}
 .section-subtitle {
   margin-bottom: 8px;
 }
@@ -288,6 +291,12 @@ img {
   background-color: var(--color-blue);
   border-color: transparent;
 }
+.filter-btn {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
 .menu-sections {
   display: flex;
   margin-bottom: 72px;
@@ -296,19 +305,20 @@ img {
 .btn-portfolio:not(:last-child) {
   margin-right: 24px;
 }
-.btn-portfolio {
+/*.btn-portfolio {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 12px;
   padding-bottom: 12px;
-}
+  }*/
+
 /*================Subheadings of the second section====================*/
 .nav-types-work {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-
+  margin-bottom: 8px;
   color: var(--color-menu);
 }
 .section-subtitle {
@@ -337,6 +347,13 @@ img {
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
+  padding: 32px 16px;
+}
+.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+  padding-left: 156px;
+  padding-right: 156px;
 }
 
 /*FOOTER*/
